@@ -1,0 +1,1530 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+:root
+{
+    --font_family_mono:'B612 Mono', monospace;
+    --font_family_B612:'Space Mono', monospace;
+    --font-family_alie:ailerons;
+}
+
+
+/* loader */
+#preloader
+{
+    background: black ;
+    z-index: 10000000;
+    height: 100%;
+    display: flex;
+    color: white;
+    font-family: check;
+    
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+}
+#preloader h1
+{
+    transition: 2s cubic-bezier(0.9, 0.03, 0.37, 0.99);
+    animation: drop 2s ease-in-out ;
+    font-size: 5.8rem;
+}
+
+#preloader span
+{
+    position: relative;
+    display: inline-block;
+    
+}
+.let1 {
+    animation: drop 1.4s ease-in infinite;
+    animation-delay: 1s;
+  }
+  
+  .let2 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.1s;
+  }
+  
+  .let3 {
+    animation: drop 1.4s ease-in-out infinite ;
+    animation-delay: 1.2s;
+  }
+  
+  .let4 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.3s;
+  
+  }
+  
+  .let5 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.4s;
+  }
+  
+  .let6 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+  
+  .let7 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.6s;
+  }
+  .let8
+  {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay:1.7s;
+  }
+  @keyframes drop {
+      10% {
+          opacity: 0.8;
+      }
+    
+      90% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 0;
+          /* top: 5.94em */
+      }
+  }
+
+
+
+  /* main includeing nav */
+.container
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+}
+
+
+.one_main {
+    min-width: 100%;
+    height: auto;
+display: inline-block;
+
+}
+#main_name {
+    color: #ffffffe3;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    font-size: 42px;
+font-family:check;
+    top: 8px;
+    padding: 9px 7px;
+    letter-spacing: 2px;
+}
+header {
+    float: left;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    position: absolute;
+    width: 35%;
+}
+
+.nav {
+   
+    width: 28%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+   
+}
+
+.burger {
+    
+    position: absolute;
+    left: 60px;
+    cursor: pointer;
+    z-index: 10000;
+    top: 30px;
+   
+  
+}
+.text
+{
+    width: 1000px;
+    height: 1000;
+}
+.nav_items_ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: left .8s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+    list-style: none;
+    left: 0px;
+    background-color: white;
+    width: 70vh;
+    z-index: 1000;
+    height: 100vh;
+}
+
+.nav_items {
+    margin: 15px 10px;
+    width: 234px;
+    border-radius: 4px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 25px;
+    font-family: var(--font-family_alie);
+}
+.lines
+{
+    width: 33px;
+    background-color: rgb(214, 42, 42);
+    height: 2px;
+    margin: 5px 5px;
+}
+.nav_hide {
+    transition: left .8s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+    left: -600px;
+    width: 97.6%;
+    background-color: white;
+    height: 100vh;
+}
+
+#logo_social a{
+    margin: 10px 15px;
+
+        }
+
+        .side_car_vista_logo {
+            transform: rotate(90deg);
+       
+            display: block;
+            left: 101px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+background-color: black;
+
+            height: 65px;
+            width: 100vh;
+            position: absolute;
+            z-index: 1200;
+        }
+.side_car_vista_logo h1
+{
+    color: white;
+    font-family: check;
+    opacity: .9;
+}
+.nav_items a
+{
+    color: black;
+}
+.nav_items_ul li.active {
+    background-color: #f5f5f5;
+    
+    font-size: 32px;
+}
+/* button slide */
+
+
+.arrows {
+   
+    width: 52px;
+  
+    top: 7px;
+    cursor: pointer;
+    display: block;
+    left: 12px;
+    height: 99px;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.arrows_1
+{
+    
+        width: 52px;
+        top: 9px;
+        cursor: pointer;
+        display: block;
+        left: 25px;
+        height: 99px;
+        position: absolute;
+        transform: rotate(-90deg);
+    }
+
+.arrows_3 {
+    width: 52px;
+  
+    top: 7px;
+    cursor: pointer;
+    display: block;
+    left: 12px;
+    height: 99px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+.arrows span,.arrows_1 span,.arrows_3 span
+{
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    transform: rotate(45deg);
+    margin: -4px 12px;
+    animation: animate 2s infinite;
+  
+
+}
+.arrows span:nth-child(2),.arrows_1 span:nth-child(2),.arrows_3 span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrows span:nth-child(3),.arrows_1 span:nth-child(3),.arrows_3 span:nth-child(3) {
+    animation-delay: -0.3s;
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+#main_pop_a {
+    position: fixed;
+    width: 90px;
+    right: 34px;
+    top: 40%;
+    z-index: 12000;
+    display: none;
+    height: 102px;
+   
+}
+#main_pop_button
+{
+    border-radius: 5px;
+    position: fixed;
+    font-size: 20px;
+border: none;
+/* border: 2px solid white; */
+    background: transparent;
+    outline: none;
+    display: none;
+    width: 107px;
+    height: 103px;
+}
+
+#footer_button_link
+{
+    position: fixed;
+    width: 90px;
+    right: 8px;
+    top: 45%;
+    z-index: 12000;
+display: none;
+    height: 60px;
+}
+#footer_button {
+    border-radius: 5px;
+    position: fixed;
+    font-size: 20px;
+
+    border: none;
+    background: transparent;
+    outline: none;
+    display: none;
+    width: 108px;
+    height: 90px;
+}
+#main_button_category
+{
+    position: fixed;
+    width: 87px;
+   left: 34px;
+   /* border: 2px solid white; */
+    top: 45%;
+    z-index: 12000;
+display: none;
+    height: 91px;
+}
+#main_button_submit
+{
+    border-radius: 5px;
+    position: fixed;
+    font-size: 20px;
+display: none;
+/* border: 2px solid red; */
+ background: transparent;
+border: none;
+ width: 95px;
+    height: 91px;
+}
+/* video */
+
+.background_video
+{
+        overflow: hidden;
+    width: 100%;
+    z-index: 200;
+    height: auto;
+}
+video
+{
+    width: 100%;
+    height: 100%;
+}
+
+.two
+{
+       min-width: 100%;
+    height: auto;
+   overflow-y: auto;
+display:block;
+position: relative;
+}
+.cars {
+    width: 80%;
+    color: white;
+    height: 440px;
+    
+    top: 0;
+   
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    align-items: center;
+    left: 0;
+    margin: 135px 190px;
+}
+
+.suzuki-car_cards {
+    border: 2px solid rgba(255, 255, 255, 0.322);
+    width: 29%;
+    display: flex;
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    border-radius: 19px;
+    height:90%;
+}
+.suzuki-image_car
+{
+    width: 100%;
+    height: 100%;
+    
+}
+.suzuki-image_car img
+{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.honda-car_cards {
+    border: 2px solid rgba(255, 255, 255, 0.322);
+    width: 29%;
+    display: flex;
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    border-radius: 19px;
+    height:90%;
+    
+}
+.honda-image_car
+{
+    width: 100%;
+    height: 100%;
+ 
+}
+.honda-image_car img
+{
+  
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+.toyota-car_cards {
+    border: 2px solid rgba(255, 255, 255, 0.322);
+    width: 29%;
+    display: flex;
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    border-radius: 19px;
+    height:90%;
+}
+
+.toyota-image_car
+{
+    width: 100%;
+    height: 100%;
+    
+}
+.toyota-image_car img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* hover */
+
+.card_cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+  position: absolute;
+  top: 0;
+  right: -100%;
+ border-radius: 10px;
+  backdrop-filter: blur(1.3px);
+  display: none;
+  text-align: center;
+padding: 55% 5px;
+  transition: .8s ease-in;
+ 
+}
+
+.card_cover
+a
+{
+    font-size: 30px;
+    font-family: var(--font-family_alie);
+    color: rgba(255, 255, 255, 0.781);
+    font-weight: 100;
+
+    /* text-decoration: underline; */
+}
+.honda-car_cards :hover .card_cover
+{
+  right: 0;
+    display: inline-block;
+}
+
+.toyota-car_cards :hover .card_cover
+{
+  right: 0;
+    display: inline-block;
+}
+.suzuki-car_cards :hover .card_cover
+{
+  right: 0;
+    display: inline-block;
+}
+
+
+
+/* footer */
+
+.three
+{
+    
+    min-width: 30%;
+    height: 100vh;
+border-left: 2px solid rgba(255, 255, 255, 0.452);
+   /* overflow-y: auto; */
+display:flex;
+
+justify-content: space-between;
+position: relative;
+}
+.car_vista_logo
+{
+   
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid rgba(255, 255, 255, 0.363);
+  height: 100%;
+  position: relative;
+}
+.inner_car_vista_logo
+{
+
+  
+    height: 10%;
+    position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+    width: 300px;
+    transform: rotate(-90deg);
+}
+.car_vista_logo h1
+{
+
+   font-size: 40px;
+   color: white;
+  font-family: check;
+  opacity: .9;
+ 
+}
+.main_footer
+{
+   
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_content
+{
+   
+    color: #f5f5f5;
+    height:30%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.397);
+    padding: 10px 13px;
+    width: 90%;
+}
+.footer_content p
+{
+    font-family: para;
+    font-size: 13px;
+    font-weight: 100;
+    margin: 5px 25px;
+    line-height: 27px;
+}
+
+.footer_content_links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: start;
+padding: 10px 20px;
+}
+.footer_content_links h3
+{
+    font-size: 23px;
+    letter-spacing: 5px;
+    margin: 5px 5px;
+    font-family: para;
+}
+.footer_content_links li
+{
+    font-size: 20px;
+    font-family: para;
+    margin: 5px 5px;
+}
+.footer_content_links li a
+{
+    color: white;
+    opacity: .7;
+
+}
+.footer_content_links li a:hover
+{
+    opacity: 1;
+}
+
+.footer_social_links
+{
+ 
+    display: flex;
+    height: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social_links_text
+{
+    font-family: para;
+    font-size:23px ;
+    margin: 10px 17px;
+    letter-spacing: 7px;
+}
+.footer_social_links a svg
+{
+   width: 30px;
+   height: 30px;
+   opacity: .8;
+}
+.footer_social_links a svg:hover
+{
+    opacity: 1;
+}
+.copy_right
+{
+color: white;
+font-family: var(--font-family_alie);
+opacity: .8;
+}
+
+
+
+
+/* Media Queries */
+
+@media screen and (min-width:349px){
+    
+#preloader h1
+{
+    font-size: 2.5rem;
+}
+*
+{
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#preloader h1
+{
+    font-size: 2.5rem;
+}
+.nav_items_ul
+{
+    height: 100vh;
+    width: 62%;
+}
+.nav_items
+{
+    width: 100%;
+    height: 27px;
+}
+.nav_items a
+{
+    font-size: 21px;
+}
+.nav_hide
+{
+    height: 100vh;
+    width: 62%;
+}
+.burger {
+    position: absolute;
+    left: 9px;
+    cursor: pointer;
+    z-index: 10000;
+    top: 19px;
+}
+.side_car_vista_logo
+{
+transform: rotate(0deg);
+left: 0;
+width: 100%;
+bottom: 0;
+
+}
+.side_car_vista_logo h1
+{
+    font-size: 33px;
+}
+.container
+{
+    flex-direction: column;
+}
+.two{
+    overflow-y: hidden;
+}
+.cars {
+    flex-direction: row;
+    height: 66%;
+    margin: 39px 49px;
+}
+.card_cover {
+    width: 100%;
+    height: 60%;
+   
+    padding: 39% 5px;
+   
+}
+.card_cover a {
+    font-size: 15px;
+ 
+    left: 10px;
+    top: 36%;
+    position: absolute;
+  
+   
+}
+.honda-car_cards,.suzuki-car_cards,.toyota-car_cards
+{
+    height: 100%;
+    margin: 10px 10px;
+    width: 42%;
+}
+.three
+{
+    flex-direction: column;
+}
+.car_vista_logo {
+    width: 100%;
+    height: 11%;
+    background-color: white;
+    color: black;
+}
+.car_vista_logo h1
+{
+    color: black;
+}
+.inner_car_vista_logo {
+    transform: rotate(0deg);
+    height: 100%;
+    
+}
+.main_footer
+{
+    width: 100%;
+    height: 85%;
+}
+.footer_content
+{
+    width: 100%;
+    height: 30%;
+}
+.footer_content_links
+{
+    height: 78%;
+}
+.footer_content_links h3
+{
+    font-size: 19px;
+}
+.footer_content_links li
+{
+    font-size: 15px;
+}
+.copy_right {
+    color: white;
+    font-family: var(--font-family_alie);
+    opacity: .8;
+    height: 9%;
+}
+}
+
+
+@media screen and (min-width:1024px){
+    
+    *
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+    
+    
+    
+    #preloader
+{
+    background: black ;
+    z-index: 10000000;
+    height: 100%;
+    display: flex;
+    color: white;
+    font-family: check;
+    
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+}
+#preloader h1
+{
+    transition: 2s cubic-bezier(0.9, 0.03, 0.37, 0.99);
+    animation: drop 2s ease-in-out ;
+    font-size: 5.8rem;
+}
+
+#preloader span
+{
+    position: relative;
+    display: inline-block;
+    
+}
+.let1 {
+    animation: drop 1.4s ease-in infinite;
+    animation-delay: 1s;
+  }
+  
+  .let2 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.1s;
+  }
+  
+  .let3 {
+    animation: drop 1.4s ease-in-out infinite ;
+    animation-delay: 1.2s;
+  }
+  
+  .let4 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.3s;
+  
+  }
+  
+  .let5 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.4s;
+  }
+  
+  .let6 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+  
+  .let7 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.6s;
+  }
+  .let8
+  {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay:1.7s;
+  }
+  @keyframes drop {
+      10% {
+          opacity: 0.8;
+      }
+    
+      90% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 0;
+          /* top: 5.94em */
+      }
+  }
+
+
+
+  /* main includeing nav */
+.container
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+}
+
+
+.one_main {
+    min-width: 100%;
+    height: auto;
+display: inline-block;
+
+}
+#main_name {
+    color: #ffffffe3;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    font-size: 42px;
+font-family:check;
+    top: 8px;
+    padding: 9px 7px;
+    letter-spacing: 2px;
+}
+header {
+    float: left;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    position: absolute;
+    width: 35%;
+}
+
+.nav {
+   
+    width: 28%;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+   
+}
+
+.burger {
+    
+    position: absolute;
+    left: 60px;
+    cursor: pointer;
+    z-index: 10000;
+    top: 30px;
+   
+  
+}
+.text
+{
+    width: 1000px;
+    height: 1000;
+}
+.nav_items_ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: left .8s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+    list-style: none;
+    left: 0px;
+    background-color: white;
+    width: 97.6%;
+    z-index: 1000;
+    height: 100vh;
+}
+
+.nav_items {
+    margin: 15px 10px;
+    width: 234px;
+    border-radius: 4px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 25px;
+    font-family: var(--font-family_alie);
+}
+.lines
+{
+    width: 33px;
+    background-color: rgb(214, 42, 42);
+    height: 2px;
+    margin: 5px 5px;
+}
+.nav_hide {
+    transition: left .8s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+    left: -600px;
+    width: 97.6%;
+    background-color: white;
+    height: 100vh;
+}
+
+#logo_social a{
+    margin: 10px 15px;
+
+        }
+
+        .side_car_vista_logo {
+            transform: rotate(90deg);
+       
+            display: block;
+            left: 21.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+background-color: black;
+top: 45%;
+bottom: 0;
+            height: 65px;
+            width: 100vh;
+            position: absolute;
+            z-index: 1200;
+        }
+.side_car_vista_logo h1
+{
+    color: white;
+    font-family: check;
+    opacity: .9;
+}
+.nav_items a
+{
+    color: black;
+}
+.nav_items_ul li.active {
+    background-color: #f5f5f5;
+    
+    font-size: 32px;
+}
+/* button slide */
+
+
+.arrows {
+   
+    width: 52px;
+  
+    top: 7px;
+    cursor: pointer;
+    display: block;
+    left: 12px;
+    height: 99px;
+    position: absolute;
+    transform: rotate(90deg);
+}
+.arrows_1
+{
+    
+        width: 52px;
+        top: 9px;
+        cursor: pointer;
+        display: block;
+        left: 25px;
+        height: 99px;
+        position: absolute;
+        transform: rotate(-90deg);
+    }
+
+.arrows_3 {
+    width: 52px;
+  
+    top: 7px;
+    cursor: pointer;
+    display: block;
+    left: 12px;
+    height: 99px;
+    position: absolute;
+    transform: rotate(-90deg);
+}
+.arrows span,.arrows_1 span,.arrows_3 span
+{
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    border-right: 5px solid rgb(255, 255, 255);
+    transform: rotate(45deg);
+    margin: -4px 12px;
+    animation: animate 2s infinite;
+  
+
+}
+.arrows span:nth-child(2),.arrows_1 span:nth-child(2),.arrows_3 span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrows span:nth-child(3),.arrows_1 span:nth-child(3),.arrows_3 span:nth-child(3) {
+    animation-delay: -0.3s;
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+#main_pop_a {
+    position: fixed;
+    width: 90px;
+    right: 34px;
+    top: 40%;
+    z-index: 12000;
+    display: none;
+    height: 102px;
+   
+}
+#main_pop_button
+{
+    border-radius: 5px;
+    position: fixed;
+    font-size: 20px;
+border: none;
+/* border: 2px solid white; */
+    background: transparent;
+    outline: none;
+    display: none;
+    width: 107px;
+    height: 103px;
+}
+
+#footer_button_link
+{
+    position: fixed;
+    width: 90px;
+    right: 8px;
+    top: 45%;
+    z-index: 12000;
+display: none;
+    height: 60px;
+}
+#footer_button {
+    border-radius: 5px;
+    position: fixed;
+    font-size: 20px;
+
+    border: none;
+    background: transparent;
+    outline: none;
+    display: none;
+    width: 108px;
+    height: 90px;
+}
+#main_button_category
+{
+    position: fixed;
+    width: 87px;
+   left: 34px;
+   /* border: 2px solid white; */
+    top: 45%;
+    z-index: 12000;
+display: none;
+    height: 91px;
+}
+#main_button_submit
+{
+    border-radius: 5px;
+    position: fixed;
+    font-size: 20px;
+display: none;
+/* border: 2px solid red; */
+ background: transparent;
+border: none;
+ width: 95px;
+    height: 91px;
+}
+/* video */
+
+.background_video
+{
+        overflow: hidden;
+    width: 100%;
+    z-index: 200;
+    height: auto;
+}
+video
+{
+    width: 100%;
+    height: 100%;
+}
+
+.two
+{
+       min-width: 100%;
+    height: auto;
+   overflow-y: auto;
+display:block;
+position: relative;
+}
+
+    .cars {
+        width: 70%;
+        color: white;
+        height: 53%;
+        top: 0;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        align-items: center;
+        left: 0;
+        margin: 113px 176px;
+    }
+
+
+.suzuki-car_cards {
+    border: 2px solid rgba(255, 255, 255, 0.322);
+    width: 29%;
+    display: flex;
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    border-radius: 19px;
+    height:90%;
+}
+.suzuki-image_car
+{
+    width: 100%;
+    height: 100%;
+    
+}
+.suzuki-image_car img
+{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.honda-car_cards {
+    border: 2px solid rgba(255, 255, 255, 0.322);
+    width: 29%;
+    display: flex;
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    border-radius: 19px;
+    height:90%;
+    
+}
+.honda-image_car
+{
+    width: 100%;
+    height: 100%;
+ 
+}
+.honda-image_car img
+{
+  
+    width: 100%;
+    height: 100%;
+    
+    
+}
+
+
+.toyota-car_cards {
+    border: 2px solid rgba(255, 255, 255, 0.322);
+    width: 29%;
+    display: flex;
+    position: relative;
+    align-items: start;
+    justify-content: center;
+    border-radius: 19px;
+    height:90%;
+}
+
+.toyota-image_car
+{
+    width: 100%;
+    height: 100%;
+    
+}
+.toyota-image_car img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* hover */
+
+.card_cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+  position: absolute;
+  top: 0;
+  right: -100%;
+ border-radius: 10px;
+  backdrop-filter: blur(1.3px);
+  display: none;
+  text-align: center;
+padding: 55% 5px;
+  transition: .8s ease-in;
+ 
+}
+
+.card_cover
+a
+{
+    font-size: 30px;
+    font-family: var(--font-family_alie);
+    color: rgba(255, 255, 255, 0.781);
+    font-weight: 100;
+
+    /* text-decoration: underline; */
+}
+.card_cover a {
+   
+    left: 25%;
+    top: 25%;
+    position: absolute;
+}
+.honda-car_cards :hover .card_cover
+{
+  right: 0;
+    display: inline-block;
+}
+
+.toyota-car_cards :hover .card_cover
+{
+  right: 0;
+    display: inline-block;
+}
+.suzuki-car_cards :hover .card_cover
+{
+  right: 0;
+    display: inline-block;
+}
+
+
+
+/* footer */
+
+.three
+{
+    
+    min-width: 30%;
+    height: 100vh;
+border-left: 2px solid rgba(255, 255, 255, 0.452);
+   /* overflow-y: auto; */
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+position: relative;
+}
+.car_vista_logo
+{
+   
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid rgba(255, 255, 255, 0.363);
+  height: 100%;
+  background-color: black;
+  position: relative;
+}
+.inner_car_vista_logo
+{
+
+  
+    height: 10%;
+    position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+    width: 300px;
+    transform: rotate(-90deg);
+}
+.car_vista_logo h1
+{
+
+   font-size: 40px;
+   color: white;
+  font-family: check;
+  opacity: .9;
+ 
+}
+.main_footer
+{
+   
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_content
+{
+   
+    color: #f5f5f5;
+    height:30%;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.397);
+    padding: 10px 13px;
+    width: 90%;
+}
+.footer_content p
+{
+    font-family: para;
+    font-size: 13px;
+    font-weight: 100;
+    margin: 5px 25px;
+    height: 100%;
+    width: 78%;
+    line-height: 27px;
+}
+
+.footer_content_links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+height: 100%;
+width: 84%;
+    align-items: start;
+padding: 10px 20px;
+}
+.footer_content_links h3
+{
+    font-size: 23px;
+    letter-spacing: 5px;
+    margin: 5px 5px;
+    font-family: para;
+}
+.footer_content_links li
+{
+    font-size: 20px;
+    font-family: para;
+    margin: 5px 5px;
+}
+.footer_content_links li a
+{
+    color: white;
+    opacity: .7;
+
+}
+.footer_content_links li a:hover
+{
+    opacity: 1;
+}
+
+.footer_social_links
+{
+ 
+    display: flex;
+    height: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.social_links_text
+{
+    font-family: para;
+    font-size:23px ;
+    margin: 10px 17px;
+    letter-spacing: 7px;
+}
+.footer_social_links a svg
+{
+   width: 30px;
+   height: 30px;
+   opacity: .8;
+}
+.footer_social_links a svg:hover
+{
+    opacity: 1;
+}
+.copy_right
+{
+color: white;
+font-family: var(--font-family_alie);
+opacity: .8;
+}
+
+}

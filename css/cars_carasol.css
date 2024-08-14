@@ -1,0 +1,1110 @@
+
+  :root
+{
+    --font_family_mono:'B612 Mono', monospace;
+    --font_family_B612:'Space Mono', monospace;
+    --font-family_alie:ailerons;
+    --font_family_heading:check;
+    --font_family_paragraph:paragraph;
+}
+
+body {
+  margin: 0;
+padding: 0;
+  background-color: #090909;
+  font-family: var(--font_family_mono);
+}
+/* preloader */
+#preloader
+{
+    background: black ;
+    z-index: 10000000;
+    height: 100%;
+    display: flex;
+    color: white;
+    font-family: check;
+    
+    
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+}
+#preloader h1
+{
+    transition: 2s cubic-bezier(0.9, 0.03, 0.37, 0.99);
+    animation: drop 2s ease-in-out ;
+    font-size: 5.8rem;
+}
+
+#preloader span
+{
+    position: relative;
+    display: inline-block;
+    
+}
+.let1 {
+    animation: drop 1.4s ease-in infinite;
+    animation-delay: 1s;
+  }
+  
+  .let2 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.1s;
+  }
+  
+  .let3 {
+    animation: drop 1.4s ease-in-out infinite ;
+    animation-delay: 1.2s;
+  }
+  
+  .let4 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.3s;
+  
+  }
+  
+  .let5 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.4s;
+  }
+  
+  .let6 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.5s;
+  }
+  
+  .let7 {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay: 1.6s;
+  }
+  .let8
+  {
+    animation: drop 1.4s ease-in-out infinite;
+    animation-delay:1.7s;
+  }
+  @keyframes drop {
+      10% {
+          opacity: 0.8;
+      }
+    
+      90% {
+          opacity: 0.5;
+      }
+      100% {
+          opacity: 0;
+          /* top: 5.94em */
+      }
+  }
+
+  .nav {
+   
+    width: 28%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+   
+}
+
+.burger {
+    
+    position: absolute;
+    left: 60px;
+    cursor: pointer;
+    z-index: 10000;
+    top: 28px;
+   
+  
+}
+.text
+{
+    width: 1000px;
+    height: 1000;
+}
+.nav_items_ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: left .8s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+    list-style: none;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+    width: 31%;
+    z-index: 1000;
+    height: 100vh;
+}
+
+.nav_items
+{
+    margin: 15px 10px;
+   
+    width: 290px;
+    border-radius: 4px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+ 
+font-family: var(--font-family_alie);
+
+}
+.nav_items a
+{
+    font-size: 26px;
+    width: 100%;
+    color: #090909;
+    text-decoration: none;
+}
+.lines
+{
+    width: 33px;
+    background-color: rgb(214, 42, 42);
+    height: 2px;
+    margin: 5px 5px;
+}
+.nav_hide {
+    transition: left .8s cubic-bezier(0.820, 0.085, 0.395, 0.895);
+    left: -500px;
+    width: 31%;
+    z-index: 100000;
+    background-color: white;
+    height: 100vh;
+} 
+
+.network_logos
+{
+    padding: 10px 15px;
+display: flex;
+    
+}
+#logo_social a
+{
+  
+  margin: 10px 12px;
+   
+    
+
+    
+}
+
+
+.side_car_vista_logo {
+    transform: rotate(90deg);
+
+    display: block;
+    left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+background-color: black;
+
+    height: 65px;
+    width: 100vh;
+    position: absolute;
+    z-index: 1200;
+}
+.side_car_vista_logo h1
+{
+color: white;
+font-family: check;
+margin: 10px 20px;
+opacity: .9;
+}
+/* main */
+
+
+.the_car_image
+{
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.the_car_image img
+{
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+}
+
+
+  .the_main_car
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .carousel-container {
+    position: relative;
+    width:100%;
+display: flex;
+height: 647px;
+align-items: center;
+justify-content: center;
+   margin: 66px 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-slide {
+    display: none;
+    text-align: center;
+    width: 80%;
+  margin: 50px 10px;
+    height: 600px;
+  }
+  
+  .carousel-slide img {
+    max-width: 100%;
+    height: 100%;
+    margin: 5px 10px;
+    object-fit: contain;
+  }
+  
+  .carousel-text {
+    padding: 15px 15px;
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    box-shadow: -3px 3px 5px rgba(110, 108, 108, 0.281);
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.452);
+    justify-content: center;
+    line-height: 29px;
+    /* position: absolute; */
+    height: 75%;
+    margin: 51px 10px;
+    
+    color: #fff;
+    border-radius: 25px;
+}
+  
+.carousel-text h3
+{
+  font-size: 22px;
+}
+.carousel-text p 
+{
+  text-align: initial;
+  font-size: 17px;
+
+ 
+  line-height: 35px;
+}
+.carousel-text p b
+{
+  font-size: 18px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.315);
+  margin: 3px 5px;
+}
+.carousel-text button
+{
+ width: 110px;
+ margin: 30px 20px;
+ height: 45px;
+ background:#00000048 ;
+ font-size: 18px;
+ color: white;
+ border-radius: 15px;
+ box-shadow: 1px 1px 9px rgba(255, 255, 255, 0.123);
+}
+.carousel-text button:hover
+{
+  background-color: white;
+  color: black;
+  box-shadow: 1px 1px 9px black;
+}
+.carousel-text button:active
+{
+  color: white;
+  border: 2px solid black;
+  width: 115px;
+  background-color: rgba(128, 128, 128, 0.342);
+  height: 45px;
+}
+.carousel-heading {
+  position: absolute;
+  text-align: center;
+  top: -40px;
+  padding: 10px 2px;
+  left: 30%;
+  margin: 19px 20px;
+  color: #fff;
+  font-size: 44px;
+}
+  .carousel-btn {
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    padding: 9px 18px;
+    background-color: rgba(255, 255, 255, 0.863);
+border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  .carousel-btn:hover
+     {
+      background-color: #ffffff83;
+      filter: invert(100%);
+
+     }
+     .carousel-btn:active
+     {
+      background-color: rgba(0, 0, 0, 0.438);
+filter: invert(100%);
+    }
+  #prevBtn {
+    left: 0;
+
+  }
+  
+  #nextBtn {
+    right: 0;
+  
+  }
+/* footer */
+.three
+{
+  
+    color: #f5f5f5;
+    height: 400px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    width: 1005;
+}
+.car_vista_footer_logo
+{
+
+height: 20%;
+display: flex;
+background-color: white;
+opacity: .95;
+justify-content: center;
+align-items: center;
+}
+.car_vista_footer_logo h1
+{
+    font-size: 48px;
+    color: black;
+   font-family: check;
+   opacity: .95;
+   
+}
+.footer_content_container
+{
+
+height: 75%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.footer_inner_content_description
+{
+    
+width: 28%;
+font-family: para;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 100;
+margin: 5px 25px;
+line-height: 27px;
+height: 90%;
+}
+.footer_inner_content_linkspage
+{
+   
+width: 25%;
+display: flex;
+justify-content: center;
+align-items: start;
+flex-direction: column;
+height: 90%;
+list-style: none;
+
+}
+.footer_inner_content_linkspage h3
+{
+    font-size: 23px;
+letter-spacing: 5px;
+margin: 5px 5px;
+font-family: para;
+}
+.footer_inner_content_linkspage li
+{
+font-size: 20px;
+font-family: para;
+margin: 5px 5px;
+}
+.footer_inner_content_linkspage li a
+{
+color: white;
+opacity: .7;
+text-decoration: none;
+}
+.footer_inner_content_linkspage li a:hover
+{
+opacity: 1;
+}
+.footer_inner_content_sociallinks
+{
+  
+    width: 25%;
+    height: 90%;
+display: flex;
+justify-content: center;
+align-items: start;
+flex-direction: column;
+}
+
+.footer_inner_content_sociallinks h3
+{
+    font-family: para;
+    font-size:23px ;
+    margin: 10px 17px;
+    letter-spacing: 7px;
+}
+
+.footer_social_links
+{
+margin: 23px 2px;
+
+height: 50%;
+}
+.footer_social_links a
+{
+margin: 10px 25px;
+
+}
+.footer_social_links a svg
+{
+width: 30px;
+height: 30px;
+opacity: .8;
+}
+.footer_social_links a svg:hover
+{
+opacity: 1;
+}
+.copy_right
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.copy_right h3
+{
+font-size: 20px;
+opacity: .7;
+font-family: var(--font-family_alie);
+}
+
+
+
+/* media qureies */
+
+  @media screen and (min-width: 349px)
+  {
+    #preloader h1
+    {
+        font-size: 2.5rem;
+    }
+    .nav_items_ul
+    {
+        height: 100vh;
+        width: 76%;
+    }
+    .nav_items
+    {
+        width: 100%;
+        height: 27px;
+    }
+    .nav_items a
+    {
+        font-size: 21px;
+    }
+    .nav_hide
+    {
+        height: 100vh;
+        width: 76%;
+    }
+    .burger {
+        position: absolute;
+        left: 9px;
+        cursor: pointer;
+        z-index: 10000;
+        top: 19px;
+    }
+    .side_car_vista_logo
+    {
+    transform: rotate(0deg);
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    
+    }
+    .side_car_vista_logo h1
+    {
+        font-size: 33px;
+    }
+
+    .carousel-slide
+    {
+      flex-direction: column;
+    }
+    .carousel-heading {
+      position: absolute;
+      text-align: center;
+      top: 10px;
+      padding: 10px 2px;
+      left: 9%;
+      margin: 19px 20px;
+      color: #fff;
+      font-size: 30px;
+  }
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 17px 9px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel-btn {
+  position: absolute;
+  top: 29%;
+  transform: translateY(-50%);
+  padding: 4px 6px;
+  background-color: rgba(255, 255, 255, 0.863);
+  border: none;
+  cursor: pointer;
+}
+.carousel-slide {
+  display: none;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+      align-items: center;
+  margin: 95px 10px;
+  height: auto;
+}
+.carousel-text {
+  padding: 15px 15px;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  box-shadow: -3px 3px 5px rgba(110, 108, 108, 0.281);
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.452);
+  justify-content: center;
+  line-height: 17px;
+  /* position: absolute; */
+  height: auto;
+  margin: 25px 14px;
+  color: #fff;
+  border-radius: 25px;
+}
+.carousel-text h3 {
+  font-size: 20px;
+}
+.carousel-text p b {
+  font-size: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.315);
+  margin: 3px 5px;
+}
+.carousel-text p {
+  text-align: initial;
+  font-size: 14px;
+  line-height: 29px;
+}
+.carousel-text button {
+  width: 97px;
+  margin: 15px 20px;
+  height: 43px;
+  background: #00000048;
+  font-size: 16px;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 9px rgba(255, 255, 255, 0.123);
+}
+.carousel-slide img
+{
+  width: 100%;
+  margin: 5px 10px;
+}
+
+
+.three
+{
+    height: 100%;
+    margin: 10px 0px;
+
+}
+.footer_content_container
+{
+    flex-direction: column;
+    height: 100%;
+}
+.footer_inner_content_description,.footer_inner_content_linkspage,
+.footer_inner_content_sociallinks {
+    width: 74%;
+    
+  
+
+    margin: 28px 25px;
+  
+    height: 100%;
+}
+  }
+
+
+
+
+
+
+
+  @media screen and (max-width: 350px)
+  {
+
+    .nav_items_ul
+    {
+        height: 100vh;
+        width: 62%;
+    }
+    .nav_items
+    {
+        width: 100%;
+        height: 27px;
+    }
+    .nav_items a
+    {
+        font-size: 21px;
+    }
+    .nav_hide
+    {
+        height: 100vh;
+        width: 62%;
+    }
+    .burger {
+        position: absolute;
+        left: 9px;
+        cursor: pointer;
+        z-index: 10000;
+        top: 19px;
+    }
+    .side_car_vista_logo
+    {
+    transform: rotate(0deg);
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    
+    }
+    .side_car_vista_logo h1
+    {
+        font-size: 30px;
+    }
+
+
+
+    .carousel-slide
+    {
+      flex-direction: column;
+    }
+    .carousel-heading {
+      position: absolute;
+      text-align: center;
+      top: 10px;
+      padding: 10px 2px;
+      left: 19%;
+      margin: 19px 20px;
+      color: #fff;
+      font-size: 30px;
+  }
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 17px 9px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel-btn {
+  position: absolute;
+  top: 37%;
+  transform: translateY(-50%);
+  padding: 4px 6px;
+  background-color: rgba(255, 255, 255, 0.863);
+  border: none;
+  cursor: pointer;
+}
+.carousel-slide {
+  display: none;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+      align-items: center;
+  margin: 95px 10px;
+  height: auto;
+}
+.carousel-text {
+  padding: 15px 15px;
+  display: flex;
+  width: auto;
+  flex-direction: column;
+  box-shadow: -3px 3px 5px rgba(110, 108, 108, 0.281);
+  align-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.452);
+  justify-content: center;
+  line-height: 17px;
+  /* position: absolute; */
+  height: auto;
+  margin: 25px 38px;
+  color: #fff;
+  border-radius: 25px;
+}
+.carousel-text h3 {
+  font-size: 20px;
+}
+.carousel-text p b {
+  font-size: 15px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.315);
+  margin: 3px 5px;
+}
+.carousel-text p {
+  text-align: initial;
+  font-size: 14px;
+  line-height: 29px;
+}
+.carousel-text button {
+  width: 97px;
+  margin: 15px 20px;
+  height: 43px;
+  background: #00000048;
+  font-size: 16px;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 9px rgba(255, 255, 255, 0.123);
+}
+.carousel-slide img
+{
+  max-width: 100%;
+  margin: 5px 10px;
+}
+.three
+{
+    height: 100%;
+    margin: 10px 0px;
+
+}
+.footer_content_container
+{
+    flex-direction: column;
+    height: 100%;
+}
+.footer_inner_content_description,.footer_inner_content_linkspage,
+.footer_inner_content_sociallinks {
+    width: 74%;
+    
+  
+
+    margin: 28px 25px;
+  
+    height: 100%;
+}
+  }
+
+
+
+
+
+
+  @media screen and (min-width: 767px)
+  {
+    #preloader h1
+    {
+        transition: 2s cubic-bezier(0.9, 0.03, 0.37, 0.99);
+        animation: drop 2s ease-in-out ;
+        font-size: 3.8rem;
+    }
+    .nav_items_ul li.active {
+      background-color: #f5f5f5;
+      
+      font-size: 22px;
+  }
+
+  .nav_items_ul {
+        height: 100vh;
+        width: 50%;
+    }
+    .nav_hide
+    {
+        left: -700px;
+        width: 50%;
+    }
+  .carousel-btn
+  {
+    padding: 9px 15px;
+    top: 50%;
+  }
+    .carousel-slide
+    {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .honda_fix_2 img
+    {
+      width: 32%
+    }
+    .carousel-slide img
+    {
+      width: 47%;
+    }
+    .carousel-heading {
+      position: absolute;
+      text-align: center;
+      top: 10px;
+      padding: 10px 2px;
+      left: 29%;
+      margin: 19px 20px;
+      color: #fff;
+      font-size: 44px;
+  }
+  .footer_content_container
+  {
+      flex-direction: row;
+  }
+  .footer_social_links a
+  {
+      margin: 10px 20px;
+  }
+  }
+
+
+
+
+  @media screen and (min-width: 1024px)
+  {
+    #preloader h1
+{
+    transition: 2s cubic-bezier(0.9, 0.03, 0.37, 0.99);
+    animation: drop 2s ease-in-out ;
+    font-size: 5.8rem;
+}
+    header
+    {
+        position: relative;
+    }
+    .nav_items_ul{
+        position: absolute;
+
+    }
+    .side_car_vista_logo {
+        transform: rotate(90deg);
+        left: 39%;
+        width: 100vh;
+        top: 45.1%;
+    }
+    .nav_items_ul {
+       
+        width: 44%;
+    }
+    .nav_hide
+    {
+        width: 44%;
+    }
+    .side_car_vista_logo h1 {
+      font-size: 51px;
+  }
+    .nav_items {
+        width: 100%;
+        position: relative;
+        left: 91px;
+        height: 39px;
+    }
+    .nav_items a {
+        font-size: 27px;
+    }
+    .burger {
+      position: absolute;
+      left: 55px;
+      cursor: pointer;
+      z-index: 10000;
+      top: 44px;
+  }
+    #about-us
+    {
+        height: auto;
+        margin: 30px 0px;
+    }
+    .carousel-heading {
+      position: absolute;
+      text-align: center;
+      top: 10px;
+      padding: 10px 2px;
+      left: 29%;
+      margin: 19px 20px;
+      color: #fff;
+      font-size: 44px;
+  }
+  .three
+{
+  
+    color: #f5f5f5;
+    height: 400px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    width: 1005;
+}
+.car_vista_footer_logo
+{
+
+height: 20%;
+display: flex;
+background-color: white;
+opacity: .95;
+justify-content: center;
+align-items: center;
+}
+.car_vista_footer_logo h1
+{
+    font-size: 48px;
+    color: black;
+   font-family: check;
+   opacity: .95;
+   
+}
+.footer_content_container
+{
+
+height: 75%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+.footer_inner_content_description
+{
+    
+width: 28%;
+font-family: para;
+font-size: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: 100;
+margin: 5px 25px;
+line-height: 27px;
+height: 90%;
+}
+.footer_inner_content_linkspage
+{
+   
+width: 25%;
+display: flex;
+justify-content: center;
+align-items: start;
+flex-direction: column;
+height: 90%;
+list-style: none;
+
+}
+.footer_inner_content_linkspage h3
+{
+    font-size: 23px;
+letter-spacing: 5px;
+margin: 5px 5px;
+font-family: para;
+}
+.footer_inner_content_linkspage li
+{
+font-size: 20px;
+font-family: para;
+margin: 5px 5px;
+}
+.footer_inner_content_linkspage li a
+{
+color: white;
+opacity: .7;
+text-decoration: none;
+}
+.footer_inner_content_linkspage li a:hover
+{
+opacity: 1;
+}
+.footer_inner_content_sociallinks
+{
+  
+    width: 25%;
+    height: 90%;
+display: flex;
+justify-content: center;
+align-items: start;
+flex-direction: column;
+}
+
+.footer_inner_content_sociallinks h3
+{
+    font-family: para;
+    font-size:23px ;
+    margin: 10px 17px;
+    letter-spacing: 7px;
+}
+
+.footer_social_links
+{
+margin: 23px 2px;
+
+height: 50%;
+}
+.footer_social_links a
+{
+margin: 10px 25px;
+
+}
+.footer_social_links a svg
+{
+width: 30px;
+height: 30px;
+opacity: .8;
+}
+.footer_social_links a svg:hover
+{
+opacity: 1;
+}
+.copy_right
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.copy_right h3
+{
+font-size: 20px;
+opacity: .7;
+font-family: var(--font-family_alie);
+}
+  }
+
+
+
+  

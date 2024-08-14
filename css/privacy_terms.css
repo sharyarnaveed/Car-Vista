@@ -1,0 +1,683 @@
+
+
+
+*
+    {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body
+    { 
+        height: 100vh;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+        background-color: rgba(0, 0, 0, 0.932);
+    }
+    main
+    {
+    
+   
+      width: 100%;
+      position: relative;
+     
+    }
+    .slide-container,.slide-container_policy
+    {
+        position: relative;
+        overflow: hidden;
+        
+        /* display: inline-block; */
+   
+        width: 100%;
+    
+       display: block;
+        height: 100vh;
+    }
+    aside
+    {
+      width: 20%;
+     border-right:2px solid rgba(255, 255, 255, 0.418) ;
+      height: 100%;
+      display: flex;
+      background-color: black;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    aside h1
+    {
+      font-size: 30px;
+      margin: 5px 30px;
+      color: white;
+   
+    }
+    aside p
+    {
+      color: #fff;
+      font-size: 18px;
+      margin: 10px 34px;
+    }
+    .left-slider,.left-slider_policy
+    {
+       
+        display: none;
+     
+        
+    }
+    .left-slider>div,.left-slider_policy>div
+    {
+       
+        display: none;
+        
+      
+        justify-content: center;color: #fff;
+    }
+    .right-slider,.right-slider_policy
+    {
+        height: 100%;
+        position: absolute;
+        top: 210px;
+       
+        left: 50%;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+    .right-slider p,.right-slider_policy p
+    {
+      
+      position: absolute;
+left: 0px;
+
+width: 45%;
+color: white;
+line-height: 32px;
+font-size: 20px;
+    }
+    .right-slider h1,.right-slider_policy h1
+    {
+      font-size: 35px;
+      line-height: 69px;
+      color: #fff;
+    }
+    .right-slider >div,.right-slider_policy >div
+    {
+        background-repeat:no-repeat ;
+        background-size: cover;
+        background-position: center center;
+        height: 100%;
+        width: 50%;
+
+    }
+    button{
+        background-color: #fff;
+        border: none;
+        color: #aaa;
+        cursor: pointer;
+        font-size: 16px;
+       width: 50px;
+       height: 50px;
+    }
+  .slide-container .action_buttons button,.slide-container_policy .action_buttons_policy button{
+        position: absolute;
+        left: 28%;
+        top: 50%;
+      
+    }
+    .down_button,.down_button_policy
+    {
+        transform: translateX(-100%);
+      border-radius: 9px;
+    }
+    .up_button_policy,.up_button
+    {
+        transform: translateY(-100%);
+        border-radius: 9px;
+    }
+
+
+
+    @media screen and (min-width:349px) {
+      
+      
+      #preloader h1
+{
+    font-size: 2.5rem;
+}
+
+.nav_items_ul
+{
+    height: 100vh;
+    width: 76%;
+}
+.nav_items
+{
+    width: 100%;
+    height: 27px;
+}
+.nav_items a
+{
+    font-size: 21px;
+}
+.nav_hide
+{
+    height: 100vh;
+    width: 76%;
+}
+.burger {
+    position: absolute;
+    left: 9px;
+    cursor: pointer;
+    z-index: 10000;
+    top: 19px;
+}
+.side_car_vista_logo
+{
+transform: rotate(0deg);
+left: 0;
+width: 100%;
+bottom: 0;
+
+}
+.side_car_vista_logo h1
+{
+    font-size: 33px;
+}
+aside
+{
+  display: none;
+}
+ .slide-container_policy .action_buttons_policy button
+{
+  left: 13%;
+  top: 8%;
+}
+.slide-container .action_buttons button
+{
+  
+}
+.right-slider, .right-slider_policy
+{
+  top: 15%;
+  left: 2%;
+}
+.right-slider p, .right-slider_policy p
+{
+  width: 94%;
+  font-size: 15px;
+}
+.right-slider h1, .right-slider_policy h1 {
+  font-size: 25px;
+  line-height: 44px;
+  color: #fff;
+}
+.right-slider >div, .right-slider_policy >div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 76%;
+}
+.slide-container, .slide-container_policy
+{
+  padding: 10px 10px;
+}
+button{
+  width:35px;
+    height: 35px;
+    display: flex;
+}
+.right-slider
+{
+  height: 100%;
+  top: 29%;
+}
+.slide-container .action_buttons button
+{
+  left: 14%;
+  top: 19%;
+}
+.three
+{
+    height: 100%;
+    margin: 10px 0px;
+
+}
+.footer_content_container
+{
+    flex-direction: column;
+    height: 100%;
+}
+.footer_inner_content_description,.footer_inner_content_linkspage,
+.footer_inner_content_sociallinks {
+    width: 90%;
+    
+  
+
+    margin: 28px 25px;
+  
+    height: 100%;
+}
+#about-us
+{
+    height: 100%;
+    flex-direction: column-reverse;
+}
+#about_us_id 
+{
+    width: 100%;
+}
+#about-us-content
+{
+    width: 86%;
+}
+#about-us-content p
+{
+    font-size: 18px;
+}
+    
+#contact_us_section
+{
+    flex-direction: column;
+    height: 100%;
+}
+#contact_img 
+{
+    width: 100%;
+}
+#contact_form
+{
+    width: 100%;
+}
+.form_whole
+{
+    width: 84%;
+}
+    }
+
+
+    @media screen and (max-width:350px) {
+      .nav_items_ul
+{
+    height: 100vh;
+    width: 62%;
+}
+.nav_items
+{
+    width: 100%;
+    padding: 0px 1px;
+    height: 27px;
+}
+.nav_items a
+{
+    font-size: 21px;
+}
+.nav_hide
+{
+    height: 100vh;
+    width: 62%;
+}
+.burger {
+    position: absolute;
+    left: 9px;
+    cursor: pointer;
+    z-index: 10000;
+    top: 19px;
+}
+.side_car_vista_logo
+{
+transform: rotate(0deg);
+left: 0;
+width: 100%;
+bottom: 0;
+
+}
+.side_car_vista_logo h1
+{
+    font-size: 36px;
+}
+aside
+{
+  display: none;
+}
+ .slide-container_policy .action_buttons_policy button
+{
+  left: 13%;
+  top: 8%;
+}
+.slide-container .action_buttons button
+{
+  
+}
+.right-slider, .right-slider_policy
+{
+  top: 15%;
+  left: 2%;
+}
+.right-slider p, .right-slider_policy p
+{
+  width: 94%;
+  font-size: 15px;
+}
+.right-slider h1, .right-slider_policy h1 {
+  font-size: 25px;
+  line-height: 44px;
+  color: #fff;
+}
+.right-slider >div, .right-slider_policy >div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 76%;
+}
+.slide-container, .slide-container_policy
+{
+  padding: 10px 10px;
+}
+button{
+  width:35px;
+    height: 35px;
+    display: flex;
+}
+.right-slider
+{
+  height: 84%;
+  top: 29%;
+}
+.slide-container .action_buttons button
+{
+  left: 14%;
+  top: 19%;
+}
+.three
+{
+    height: auto;
+    margin: 10px 0px;
+
+}
+.footer_content_container
+{
+    flex-direction: column;
+    height: 100%;
+}
+.footer_inner_content_description,.footer_inner_content_linkspage,
+.footer_inner_content_sociallinks {
+    width: 90%;
+    
+  
+
+    margin: 28px 25px;
+  
+    height: 100%;
+}
+#about-us
+{
+    height: 100%;
+    flex-direction: column-reverse;
+}
+#about_us_id 
+{
+    width: 100%;
+}
+#about-us-content
+{
+    width: 86%;
+}
+#about-us-content p
+{
+    font-size: 18px;
+}
+    
+#contact_us_section
+{
+    flex-direction: column;
+    height: 100%;
+}
+#contact_img 
+{
+    width: 100%;
+}
+#contact_form
+{
+    width: 100%;
+}
+.form_whole
+{
+    width: 84%;
+}
+    }
+
+@media screen and (min-width:767px){
+  
+  .nav_items_ul {
+    height: 100vh;
+    width: 50%;
+}
+.nav_hide
+{
+    left: -700px;
+    width: 50%;
+}
+.footer_content_container
+{
+    flex-direction: row;
+}
+.footer_social_links a
+{
+    margin: 10px 20px;
+}
+  main
+  {
+  
+ 
+    width: 100%;
+    position: relative;
+   
+  }
+  .slide-container,.slide-container_policy
+  {
+      position: relative;
+      overflow: hidden;
+      
+      /* display: inline-block; */
+ 
+      width: 100%;
+  
+     display: block;
+      height: 100vh;
+  }
+  aside
+  {
+    width: 25%;
+   border-right:2px solid rgba(255, 255, 255, 0.418) ;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  aside h1
+  {
+    font-size: 30px;
+    margin: 5px 30px;
+    color: white;
+ 
+  }
+  aside p
+  {
+    color: #fff;
+    font-size: 18px;
+    margin: 10px 34px;
+  }
+  .left-slider,.left-slider_policy
+  {
+     
+      display: none;
+   
+      
+  }
+  .left-slider>div,.left-slider_policy>div
+  {
+     
+      display: none;
+      
+    
+      justify-content: center;color: #fff;
+  }
+  .right-slider,.right-slider_policy
+  {
+      height: 100%;
+      position: absolute;
+      top: 11%;
+     
+      left: 42%;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+  }
+  .right-slider p,.right-slider_policy p
+  {
+    
+    position: absolute;
+left: 0px;
+
+width: 45%;
+color: white;
+line-height: 32px;
+font-size: 18px;
+  }
+  .right-slider h1,.right-slider_policy h1
+  {
+    font-size: 32px;
+    line-height: 69px;
+    color: #fff;
+  }
+  .right-slider >div,.right-slider_policy >div
+  {
+      background-repeat:no-repeat ;
+      background-size: cover;
+      background-position: center center;
+      height: 100%;
+      width: 100%;
+
+  }
+  button{
+      background-color: #fff;
+      border: none;
+      color: #aaa;
+      cursor: pointer;
+      font-size: 16px;
+     width: 50px;
+     height: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+.slide-container .action_buttons button,.slide-container_policy .action_buttons_policy button{
+      position: absolute;
+      left: 34%;
+      top: 52%;
+     
+    
+  }
+  .down_button,.down_button_policy
+  {
+      transform: translateX(-100%);
+    border-radius: 9px;
+  }
+  .up_button_policy,.up_button
+  {
+      transform: translateY(-100%);
+      border-radius: 9px;
+  }
+
+.three
+{
+  height: auto;
+}
+.footer_content_container
+{
+  flex-direction: row;
+}
+.footer_inner_content_description, .footer_inner_content_linkspage, .footer_inner_content_sociallinks
+{
+  margin: 28px 14px;
+}
+}
+
+
+@media screen and (min-width:1024px) {
+  
+  #preloader
+  {
+      background: black ;
+      z-index: 10000000;
+      height: 100%;
+      display: flex;
+      color: white;
+      font-family: check;
+      
+      
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: fixed;
+  }
+  #preloader h1
+  {
+      transition: 2s cubic-bezier(0.9, 0.03, 0.37, 0.99);
+      animation: drop 2s ease-in-out ;
+      font-size: 5.8rem;
+  }
+  
+  
+  header
+  {
+      position: relative;
+  }
+  .nav_items_ul{
+      position: absolute;
+
+  }
+  .side_car_vista_logo {
+      transform: rotate(90deg);
+      left: 39%;
+      width: 100vh;
+      top: 45.1%;
+  }
+  .nav_items_ul {
+     
+      width: 44%;
+  }
+  .nav_hide
+  {
+      width: 44%;
+  }
+  .nav_items {
+      width: 100%;
+      position: relative;
+      left: 91px;
+      height: 27px;
+  }
+  .nav_items a {
+      font-size: 27px;
+  }
+  #about-us-content p {
+      font-size: 21px;
+  }
+  .side_car_vista_logo h1 {
+      font-size: 51px;
+  }
+  .burger {
+      position: absolute;
+      left: 55px;
+      cursor: pointer;
+      z-index: 10000;
+      top: 44px;
+  }
+  .right-slider, .right-slider_policy
+  {
+    top: 30%;
+  }
+}
